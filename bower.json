@@ -1,0 +1,23 @@
+{
+  "name": "wisdom-vault",
+  "homepage": "https://github.com/244194567/Wisdom-vault",
+  "authors": [
+    "244194567 <244194567>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "less": "^2.7.2"
+  }
+}
