@@ -1,13 +1,9 @@
 {
-  "name": "wisdom-vault",
-  "homepage": "https://github.com/244194567/Wisdom-vault",
-  "authors": [
-    "244194567 <244194567>"
-  ],
+  "name": "sza",
   "description": "",
-  "main": "",
-  "license": "MIT",
-  "private": true,
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,9 +11,10 @@
     "test",
     "tests"
   ],
-  "dependencies": {
+  "devDependencies": {
+    "less": "^2.7.2",
+    "vue": "^2.3.3",
     "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1",
-    "less": "^2.7.2"
+    "jquery": "^3.2.1"
   }
 }

@@ -1,12 +1,5 @@
 var gulp = require('gulp');
 
-gulp.task('default', function() {
-  // 将你的默认的任务代码放在这
-});  
-
-
-var gulp = require('gulp');
-
 
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
@@ -58,3 +51,4 @@ gulp.task('serve', function() {
     gulp.watch('less/*.less',['less-to-css']);
     gulp.watch(['*.html','less/*.less','js/*.js','dist/css/*.css']).on("change", browserSync.reload);;
 });
+ 
