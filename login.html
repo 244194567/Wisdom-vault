@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no,width=device-width" />
+		<title>登录</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/login.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/vue.js"></script>
+	</head>
+
+	<body>
+		<!--顶部条-->
+		<header id="top-bar">
+
+			<h1><span class="glyphicon glyphicon-menu-left" style="float: left;"></span>登录</h1>
+		</header>
+
+		<!--mainbody-->
+		<div id="main-body">
+
+			<!--功能选择-->
+			<nav>
+				<ul>
+					<li>
+						<a v-bind:class="{'a-active':aActive}" @click="account">账号登录</a>
+					</li>
+					<li>
+						<a :class="{'a-active':!aActive}" @click="phone">手机验证登录</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!--账号登录-->
+			<div id="account-login" v-show="flag">
+				<form>
+					<!--账号-->
+					<p class="p2">
+						<span class="glyphicon glyphicon-user"></span>
+						<input type="text" class="" placeholder="手机号/注册邮箱" />
+					</p>
+					<!--密码-->
+					<p class="p2">
+						<span class="glyphicon glyphicon-lock"></span>
+						<input type="password" class="" placeholder="密码" />
+					</p>
+					<!--验证码-->
+					<p class="p3">
+						<span class="glyphicon glyphicon-lock"></span>
+						<input type="text" placeholder="验证码" />
+						<span class="label label-default" @click="verification">{{random}}</span>
+					</p>
+					<p class="pa">
+						<a class="btn btn-danger btn-block">登录</a>
+					</p>
+					<p class="p0">
+						<a>快速注册</a>
+						<a>忘记密码?</a>
+					</p>
+				</form>
+			</div>
+
+			<!--手机验证登录-->
+			<div id="phone-login" v-show="!flag">
+				<form>
+					<!--手机号-->
+					<p class="p2">
+						<span class="glyphicon glyphicon-earphone"></span>
+						<input type="phone" class="" placeholder="11位手机号" />
+					</p>
+					<!--验证码-->
+					<p class="p3">
+						<span class="glyphicon glyphicon-lock"></span>
+						<input type="text" placeholder="验证码" />
+						<span class="label label-default">{{random}}</span>
+					</p>
+					<!--密码-->
+					<p class="p3">
+						<span class="glyphicon glyphicon-lock"></span>
+						<input type="text" class="" placeholder="6位短信动态码" />
+						<a class="btn">发送验证码</a>
+					</p>
+					<p class="pa">
+						<a class="btn btn-danger btn-block">登录</a>
+					</p>
+				</form>
+			</div>
+		</div>
+
+		<!--底部功能键-->
+		<footer id="footer">
+			<hr/>
+			<span>第三方登录</span>
+			<p>
+				<a>QQ</a>
+				<a>微博</a>
+			</p>
+		</footer>
+		</div>
+		<script type="text/javascript" src="js/login.js"></script>
+
+</html>

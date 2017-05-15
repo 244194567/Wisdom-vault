@@ -1,0 +1,152 @@
+@color: #F36523;
+@bgColor: #F3F3F3;
+@media screen and(max-width:420px) {
+    html{
+        font-size:5px;
+    }
+}
+@media screen and(max-width:640px) and (min-width:430px) {
+    html{
+        font-size:10px;
+    }
+}
+.glyphicon{//图标
+    font-size: 1.8rem;
+}
+body {
+    max-width: 640px;
+    margin: 0 auto;
+    background: @bgColor;
+}
+
+//顶部条
+#top-bar {
+    background: @color;
+    h1 {
+        margin: 0 2rem 0 0;
+        padding: 1rem;
+        font-size: 2rem;
+        color: white;
+        span {
+            font-size: 2rem;
+        }
+    }
+}
+
+#main-body {
+    nav {
+        overflow: hidden;
+        a {
+            margin: 0;
+            padding: 1rem;
+            font-size: 2rem;
+            width: 50%;
+            float: left;
+            color: darkgray;
+            border-bottom: 2px solid darkgray;
+            background: @bgColor;
+        }
+        .a-active {
+            color: @color;
+            border-bottom: 2px solid @color;
+        }
+    }
+}
+
+#account-login,
+#phone-login {
+    background: @bgColor;
+    padding: 2rem 0;
+    margin: 0;
+    p {
+        overflow: hidden;
+        margin: 0;
+        padding: 0.7rem;
+        text-align: left;
+        background: white;
+        border-bottom: 1px solid #D4D4D4;
+        font-size: 1.8rem;
+    }
+    input {
+        text-align: left;
+        border: 0;
+        outline: none;
+    }
+    .label-default {
+        font-size: 1.8rem;
+        float: right;
+    }
+    .pa {
+        //登录按钮
+        border: 0;
+        background: @bgColor;
+        a {
+            background: @color;
+            border: 0;
+            border-radius: 3px!important;
+            font-size: 1.8rem;
+        }
+    }
+    .p0 {
+        //快速注册，忘记密码
+        background: @bgColor;
+        overflow: hidden;
+        border: 0;
+
+        a:nth-of-type(1) {
+            color: @color;
+            font-size: 1.8rem;
+        }
+        a:nth-of-type(2) {
+            float: right;
+            font-size: 1.8rem;
+        }
+    }
+    .p2 {
+        //两个元素的p
+        span {
+            color: #D4D4D4;
+        }
+    }
+    .p3 {
+        //3个元素的p
+        span {
+            color: #D4D4D4;
+        }
+        input {
+            width: 30%;
+        }
+        a {
+            float: right;
+            padding:0 0.5rem;
+            background: darkgray;
+            color: white;
+            font-size: 1.8rem;
+            border-radius:3px!important;
+        }
+    }
+}
+
+#account-login {
+    .p3 {
+        margin: 2rem 0;
+    }
+}
+
+#footer {
+    margin: 0;
+    padding: 2rem 1rem;
+    background: @bgColor;
+    hr {
+        margin: 0;
+        border-bottom: 1px solid darkgrey;
+    }
+    span {
+        position: relative;
+        padding: 0 1rem;
+        top: -1rem;
+        font-size: 2rem;
+        color: darkgrey;
+        background: @bgColor;
+    }
+}
