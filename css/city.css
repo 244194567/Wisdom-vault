@@ -1,5 +1,24 @@
-body #city {
-  background-color: #67ffcc;
-  height: 5%;
+body {
+  max-width: 640px;
+  margin: 0 auto;
+}
+body .city {
+  background-color: #EEEEEE;
+  height: 50px;
   width: 100%;
+}
+body .city b {
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  margin-left: 30px;
+}
+body table {
+  width: 100%;
+}
+body td {
+  height: 37px;
+  width: 25%;
+  border: 2px solid #EEE9E9;
+  text-align: center;
 }
