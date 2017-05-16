@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>场次</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/screen.css" rel="stylesheet" />
+		<script src="js/vue.js"></script>
+	</head>
+
+	<body>
+		<!--顶部条-->
+		<header id="top-bar">
+			<h1>
+				<span class="glyphicon glyphicon-menu-left"></span>
+				妖精的尾巴剧场版：龙泣
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+			</h1>
+		</header>
+		<!--影院信息-->
+		<section id="cinema">
+			<div id="content">
+				<p><span>大地影院</span><span>10.<sup>0</sup></span></p>
+				<p><address>市桥街繁华路3号三楼</address></p>
+			</div>
+			<div>
+				<span class="glyphicon glyphicon-menu-right"></span>
+			</div>
+		</section>
+		<!--场次选择-->
+		<section id="screen">
+			<template v-for="date in dates">
+				<nav>
+					<ul>
+
+						<li>
+							<a>{{date.name}}</a>
+						</li>
+
+					</ul>
+				</nav>
+			</template>
+			<!--上午-->
+			<div id="morning" v-for="">
+				1
+			</div>
+			<!--下午-->
+			<div id="afternoon">
+				1
+			</div>
+			<!--晚上-->
+			<div id="night">
+				1
+			</div>
+			<!--凌晨-->
+			<div id="late-at-night">
+				1
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript" src="js/screen.js"></script>
+
+</html>
