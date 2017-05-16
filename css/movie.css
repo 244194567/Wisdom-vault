@@ -25,11 +25,12 @@ body {
   display: none;
   position: absolute;
   background-color: #F36523;
-  min-width: 160px;
+  min-width: 123px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   left: 170px;
   top: 52px;
+  z-index: 1;
 }
 #head .dropdown-content a {
   display: block;
@@ -66,4 +67,87 @@ body {
   height: 50px;
   position: relative;
   top: -80px;
+}
+#tab01 {
+  position: relative;
+  top: -70px;
+}
+.active {
+  border: 0;
+  border-bottom: 1px solid red;
+  background-color: transparent;
+  border-right: transparent;
+}
+#movie {
+  font-size: 15px;
+  color: #F36523;
+  padding-left: 75px;
+  padding-right: 75px;
+  text-align: center;
+  border: transparent;
+}
+#movie02 {
+  font-size: 15px;
+  padding-left: 75px;
+  padding-right: 75px;
+  color: #F36523;
+  border: transparent;
+}
+#home {
+  padding: 20px;
+}
+#home p {
+  color: #B1B1B1;
+}
+#home img {
+  width: 80px;
+  height: 120px;
+}
+#home span {
+  position: relative;
+  top: -50px;
+  color: black;
+  margin-left: 10px ;
+}
+#home .score {
+  color: #F36523;
+  font-size: 15px;
+  float: right;
+  top: 2px;
+}
+#home .p1 {
+  position: relative;
+  top: -70px;
+  width: 220px;
+  height: 80px;
+  left: 100px;
+  color: #6A6A6A;
+}
+.div01 {
+  position: relative;
+  top: -50px;
+}
+.div02 {
+  position: relative;
+  top: -100px;
+}
+.div03 {
+  position: relative;
+  top: -140px;
+}
+#home {
+  height: 500px;
+  border: transparent;
+}
+.myarea {
+  background-color: #F6F6F6;
+  color: #636363;
+  position: relative;
+  font-size: 15px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 20px;
+}
+#myheader {
+  margin-top: 20px;
 }
