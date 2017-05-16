@@ -5,59 +5,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <title>电影院</title>
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-
-    </head
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/movie.css">
+    </head>
 
 
 
 </head>
 <body>
-<!--
-<div id="head">
-    <img src="img/logo.png">
-    <div class="dropdown">
-        <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"
-                data-toggle="dropdown" onclick="location.href='city.html'">
-            深圳
-            <span class="caret"></span>
-        </button>
-    </div>
---> <nav class="navbar navbar-default" role="navigation" >
-    <div class="navbar-header">
-        <button id="showbtn" class="navbar-toggle" data-toggle="collapse" data-target="#show"style="background-color: #ff8621;border: none;color: white">
+<!--头部-->
+ <nav class="navbar navbar-default" role="navigation" id="head">
+    <div class="navbar-header" >
+
+        <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"
+                    data-toggle="dropdown" onclick="location.href='city.html'" >
+                深圳
+                <span class="caret"></span>
+            </button>
+        </div>
+
+        <div class="dropdown">
+        <button id="btn" class="navbar-toggle" data-toggle="collapse" data-target="#show">
             <span class="icon-bar" ></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">广州腾科</a>
+            <div class="dropdown-content">
+               <a>首页</a>
+                <a>个人中心</a>
+            </div>
     </div>
-
-    <div class="collapse navbar-collapse" id="example-navbar-collapse">
-
-
-
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Android</a></li>
-            <li><a href="#">H5</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Java <b class="caret"></b> </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">JavaSe</a></li>
-                    <li><a href="#">JavaEEn</a></li>
-                    <li><a href="#">JDBC</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">ORACLE</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Linux</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    </div>
+        </div>
 </nav>
 
-</div>
+<img src="img/logo.png" id="mylogo">
+
+
+
+
 </body>
 </html>
