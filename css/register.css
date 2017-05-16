@@ -1,0 +1,106 @@
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 430px) {
+  html {
+    font-size: 10px;
+  }
+}
+.glyphicon {
+  font-size: 1.8rem;
+}
+body {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #F2F2F2;
+}
+#top-bar {
+  background: #F36523;
+}
+#top-bar h1 {
+  margin: 0 2rem 0 0;
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+#top-bar h1 span {
+  font-size: 2rem;
+  float: left;
+}
+#register {
+  background: #F2F2F2;
+  padding: 2rem 2rem;
+  margin: 0;
+}
+#register p {
+  overflow: hidden;
+  margin: 0;
+  padding: 0.7rem;
+  text-align: left;
+  background: white;
+  border-bottom: 1px solid #D4D4D4;
+  font-size: 1.8rem;
+}
+#register input {
+  text-align: left;
+  border: 0;
+  outline: none;
+}
+#register .label-default {
+  font-size: 1.8rem;
+  float: right;
+}
+#register .pa {
+  padding-right: 0;
+  padding-left: 0;
+  border: 0;
+  background: #F2F2F2;
+}
+#register .pa a {
+  background: #F36523;
+  border: 0;
+  border-radius: 3px!important;
+  font-size: 1.8rem;
+}
+#register #clause {
+  background: #F2F2F2;
+  border: 0;
+  padding: 5px 0.7rem;
+}
+#register #clause input {
+  margin: 0!important;
+  vertical-align: middle;
+}
+#register #clause a {
+  color: #F36523;
+  text-decoration: underline;
+}
+#register .p0 {
+  text-align: right;
+  background: #F2F2F2;
+  border: 0;
+}
+#register .p0 span {
+  color: #F36523;
+}
+#register .p0 a {
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+#register .p2 span {
+  color: #D4D4D4;
+}
+#register .p3 span {
+  color: #D4D4D4;
+}
+#register .p3 a {
+  float: right;
+  padding: 0 0.5rem;
+  background: #F3F3F3;
+  color: #F36523;
+  border-bottom: 3px inset #D4D4D4;
+  font-size: 1.8rem;
+  border-radius: 9rem!important;
+}

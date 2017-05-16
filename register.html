@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no,width=device-width" />
 		<title>注册</title>
-		<link href="css/bootstrap.min.css" rel="stylesheet"/>
-		<link href="css/reset.css" rel="stylesheet"/>
-		<link href="css/register.css" rel="stylesheet"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/register.css" rel="stylesheet" />
 		<script src="js/jquery.min.js"></script>
 		<script src="js/vue.js"></script>
 	</head>
+
 	<body>
-		
+		<!--顶部条-->
+		<header id="top-bar">
+			<h1><span class="glyphicon glyphicon-menu-left" onclick="window.location='login.html'"></span>注册</h1>
+		</header>
+		<div id="main-body">
+			<div id="register">
+				<form>
+					<!--手机号-->
+					<p class="p2">
+						<span class="glyphicon glyphicon-user"></span>
+						<input type="text" class="" placeholder="11位手机号" />
+					</p>
+					<!--验证码-->
+					<p class="p3">
+						<span class="glyphicon glyphicon-lock"></span>
+						<input type="text" placeholder="验证码" />
+						<span class="label label-default" @click="verification">{{random}}</span>
+					</p>
+					<!--短信动态码-->
+					<p class="p3">
+						<span class="glyphicon glyphicon-lock"></span>
+						<input type="password" class="" placeholder="6位短信动态码" />
+						<a>动态码</a>
+					</p>
+					<!--密码-->
+					<p class="p2">
+						<span class="glyphicon glyphicon-lock"></span>
+						<input type="text" class="" placeholder="密码（6-14位字符）" />
+					</p>
+					<p id="clause">
+						<input type="checkbox" checked/>
+						<span>我已阅读并同意</span>
+						<a>格瓦拉用户协议</a>
+					</p>
+					<p class="pa">
+						<a class="btn btn-danger btn-block">注册</a>
+					</p>
+					<p class="p0">
+						<span>已有账号？</span>
+						<a onclick="window.location='login.html'">立即登录</a>
+					</p>
+				</form>
+			</div>
+		</div>
 	</body>
+	<script type="text/javascript" src="js/register.js"></script>
+
 </html>

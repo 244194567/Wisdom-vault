@@ -1,0 +1,122 @@
+@color: #F36523;
+@bgColor: #F2F2F2;
+@media screen and(max-width:420px) {
+    html {
+        font-size: 5px;
+    }
+}
+
+@media screen and(max-width:640px) and (min-width:430px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+.glyphicon {
+    //图标
+    font-size: 1.8rem;
+}
+
+body {
+    max-width: 640px;
+    margin: 0 auto;
+    background: @bgColor;
+}
+
+#top-bar {
+    background: @color;
+    h1 {
+        margin: 0 2rem 0 0;
+        padding: 1rem;
+        font-size: 2rem;
+        color: white;
+        span {
+            font-size: 2rem;
+            float: left;
+        }
+    }
+}
+
+#register {
+    background: @bgColor;
+    padding: 2rem 2rem;
+    margin: 0;
+    p {
+        overflow: hidden;
+        margin: 0;
+        padding: 0.7rem;
+        text-align: left;
+        background: white;
+        border-bottom: 1px solid #D4D4D4;
+        font-size: 1.8rem;
+    }
+    input {
+        text-align: left;
+        border: 0;
+        outline: none;
+    }
+    .label-default {
+        font-size: 1.8rem;
+        float: right;
+    }
+    .pa {
+        //登录按钮
+        padding-right: 0;
+        padding-left: 0;
+        border: 0;
+        background: @bgColor;
+        a {
+            background: @color;
+            border: 0;
+            border-radius: 3px!important;
+            font-size: 1.8rem;
+        }
+    }
+    #clause {
+        background: @bgColor;
+        border: 0;
+        padding: 5px 0.7rem;
+        input {
+            margin: 0!important;
+            vertical-align:middle;
+        }
+        a{
+            color: @color;
+            text-decoration: underline;
+        }
+    }
+    .p0 {
+        //快速注册，忘记密码
+        text-align: right;
+        background: @bgColor;
+        border: 0;
+        span{
+            color: @color;
+        }
+        a {
+            font-size: 1.8rem;
+            text-decoration: underline;
+        }
+    }
+    .p2 {
+        //两个元素的p
+        span {
+            color: #D4D4D4;
+        }
+    }
+    .p3 {
+        //3个元素的p
+        span {
+            color: #D4D4D4;
+        }
+        a {
+            float: right;
+            padding: 0 0.5rem;
+            background: #F3F3F3;
+            color:@color;
+            border-bottom: 3px inset #D4D4D4;
+            font-size: 1.8rem;
+            border-radius: 9rem!important;
+        }
+    }
+}

@@ -1,7 +1,20 @@
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 430px) {
+  html {
+    font-size: 10px;
+  }
+}
+.glyphicon {
+  font-size: 1.8rem;
+}
 body {
   max-width: 640px;
   margin: 0 auto;
-  background: #F3F3F3;
+  background: #F2F2F2;
 }
 #top-bar {
   background: #F36523;
@@ -27,7 +40,7 @@ body {
   float: left;
   color: darkgray;
   border-bottom: 2px solid darkgray;
-  background: #F3F3F3;
+  background: #F2F2F2;
 }
 #main-body nav .a-active {
   color: #F36523;
@@ -35,7 +48,7 @@ body {
 }
 #account-login,
 #phone-login {
-  background: #F3F3F3;
+  background: #F2F2F2;
   padding: 2rem 0;
   margin: 0;
 }
@@ -63,7 +76,7 @@ body {
 #account-login .pa,
 #phone-login .pa {
   border: 0;
-  background: #F3F3F3;
+  background: #F2F2F2;
 }
 #account-login .pa a,
 #phone-login .pa a {
@@ -74,7 +87,7 @@ body {
 }
 #account-login .p0,
 #phone-login .p0 {
-  background: #F3F3F3;
+  background: #F2F2F2;
   overflow: hidden;
   border: 0;
 }
@@ -96,10 +109,6 @@ body {
 #phone-login .p3 span {
   color: #D4D4D4;
 }
-#account-login .p3 input,
-#phone-login .p3 input {
-  width: 30%;
-}
 #account-login .p3 a,
 #phone-login .p3 a {
   float: right;
@@ -115,7 +124,7 @@ body {
 #footer {
   margin: 0;
   padding: 2rem 1rem;
-  background: #F3F3F3;
+  background: #F2F2F2;
 }
 #footer hr {
   margin: 0;
@@ -127,5 +136,5 @@ body {
   top: -1rem;
   font-size: 2rem;
   color: darkgrey;
-  background: #F3F3F3;
+  background: #F2F2F2;
 }

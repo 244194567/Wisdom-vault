@@ -1,5 +1,21 @@
 @color: #F36523;
-@bgColor: #F3F3F3;
+@bgColor: #F2F2F2;
+@media screen and(max-width:420px) {
+    html {
+        font-size: 5px;
+    }
+}
+
+@media screen and(max-width:640px) and (min-width:430px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+.glyphicon {
+    //图标
+    font-size: 1.8rem;
+}
 
 body {
     max-width: 640px;
@@ -81,7 +97,6 @@ body {
         background: @bgColor;
         overflow: hidden;
         border: 0;
-
         a:nth-of-type(1) {
             color: @color;
             font-size: 1.8rem;
@@ -102,16 +117,13 @@ body {
         span {
             color: #D4D4D4;
         }
-        input {
-            width: 30%;
-        }
         a {
             float: right;
-            padding:0 0.5rem;
+            padding: 0 0.5rem;
             background: darkgray;
             color: white;
             font-size: 1.8rem;
-            border-radius:3px!important;
+            border-radius: 3px!important;
         }
     }
 }

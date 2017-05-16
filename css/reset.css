@@ -15,16 +15,4 @@ a,a:link,a:hover,a:valid,a:visited{
 	text-decoration: none;
 }
 
-@media screen and(max-width:420px) {
-    html{
-        font-size:5px;
-    }
-}
-@media screen and(max-width:640px) and (min-width:430px) {
-    html{
-        font-size:10px;
-    }
-}
-.glyphicon{//图标
-    font-size: 1.8rem;
-}
+
