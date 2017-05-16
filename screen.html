@@ -15,49 +15,68 @@
 		<!--顶部条-->
 		<header id="top-bar">
 			<h1>
-				<span class="glyphicon glyphicon-menu-left"></span>
+				<span class="glyphicon glyphicon-menu-left" onclick="window.location='#'"></span>
 				妖精的尾巴剧场版：龙泣
-				<span class="glyphicon glyphicon-menu-hamburger"></span>
+				<span class="glyphicon glyphicon-menu-hamburger" onclick="showDropMenu()"></span>
 			</h1>
+
 		</header>
 		<!--影院信息-->
 		<section id="cinema">
+			<!--三行下拉菜单-->
+			<div id="dropMenu" style="display: none;">
+				<a onclick="window.location='#'"><span class="glyphicon glyphicon-home"></span>首页</a><br />
+				<a onclick="window.location='login.html'"><span class="glyphicon glyphicon-user"></span>个人中心</a>
+			</div>
 			<div id="content">
 				<p><span>大地影院</span><span>10.<sup>0</sup></span></p>
-				<p><address>市桥街繁华路3号三楼</address></p>
+				<p>市桥街繁华路3号三楼</p>
 			</div>
-			<div>
-				<span class="glyphicon glyphicon-menu-right"></span>
-			</div>
+			<span class="glyphicon glyphicon-menu-right"></span>
+
 		</section>
 		<!--场次选择-->
-		<section id="screen">
-			<template v-for="date in dates">
-				<nav>
-					<ul>
-
+		<section id="screens">
+			<nav>
+				<ul>
+					<template v-for="date in dates">
 						<li>
-							<a>{{date.name}}</a>
+							<a v-bind:class="{'a-active':date.index==index}" @click="change(date.index)">{{date.name}}</a>
 						</li>
-
-					</ul>
-				</nav>
-			</template>
+					</template>
+				</ul>
+			</nav>
 			<!--上午-->
-			<div id="morning" v-for="">
-				1
+			<div id="mornings">
+				<div class="screen" v-for="morning in screenList[index].mornings">
+					<div><span>{{morning.start}}</span></br><span>{{morning.end}}</span></div>
+					<div><span>{{morning.type}}</span></br><span>{{morning.place}}</span></div>
+					<div><span>￥</span><span>{{morning.price}}</span></br><span>￥{{morning.original}}</span></div>
+				</div>
 			</div>
 			<!--下午-->
-			<div id="afternoon">
-				1
+			<div id="afternoons">
+				<div class="screen" v-for="afternoon in screenList[index].afternoons">
+					<div><span>{{afternoon.start}}</span></br><span>{{afternoon.end}}</span></div>
+					<div><span>{{afternoon.type}}</span></br><span>{{afternoon.place}}</span></div>
+					<div><span>￥</span><span>{{afternoon.price}}</span></br><span>￥{{afternoon.original}}</span></div>
+				</div>
 			</div>
 			<!--晚上-->
-			<div id="night">
-				1
+			<div id="nights">
+				<div class="screen" v-for="night in screenList[index].nights">
+					<div><span>{{night.start}}</span></br><span>{{night.end}}</span></div>
+					<div><span>{{night.type}}</span></br><span>{{night.place}}</span></div>
+					<div><span>￥</span><span>{{night.price}}</span></br><span>￥{{night.original}}</span></div>
+				</div>
 			</div>
 			<!--凌晨-->
-			<div id="late-at-night">
-				1
+			<div id="lates">
+				<div class="screen" v-for="late in screenList[index].lates">
+					<div><span>{{late.start}}</span></br><span>{{late.end}}</span></div>
+					<div><span>{{late.type}}</span></br><span>{{late.place}}</span></div>
+					<div><span>￥</span><span>{{late.price}}</span></br><span>￥{{late.original}}</span></div>
+				</div>
 			</div>
 		</section>
 	</body>

@@ -1,34 +1,69 @@
+function showDropMenu() {
+	console.log(1);
+	var dropM = document.querySelector('#dropMenu');
+	if(dropM.style.display == 'none') {
+		dropM.style.display = 'block';
+	} else {
+		dropM.style.display = 'none';
+	}
+
+}
+
 var screenApp = new Vue({
-	el: '#screen',
+	el: '#screens',
+	methods: {
+		change: function(index) {
+			this.index = index;
+			console.log(index);
+		}
+	},
 	data: {
 		dates: [{
-				name: '今天5月26号',
-				screens: {
-					mornings: [{
-						start: '11:50',
-						end: '14:10三场',
-						type: '日语/2D',
-						place: '2号厅',
-						price: 0,
-						original: 60
-					}],
-					afternoon: [{
-
-					}],
-					night: [{
-
-					}],
-					late: [{
-
-					}]
+			name: '今天5月26号',
+			index: 0
+		}, {
+			name: '明天5月27号',
+			index: 1
+		}, {
+			name: '后天5月28号',
+			index: 2
+		}],
+		screenList: [{
+			mornings: [{
+					start: '11:50',
+					end: '14:10散场',
+					type: '日语/2D',
+					place: '2号厅',
+					price: 0,
+					original: 60
+				},
+				{
+					start: '14:50',
+					end: '17:10散场',
+					type: '日语/2D',
+					place: '2号厅',
+					price: 0,
+					original: 60
 				}
-			},
-			{
-				name: '明天5月27号',
-			}
-		]
+			],
+			afternoons: [{
+					start: '11:50',
+					end: '14:10散场',
+					type: '日语/2D',
+					place: '2号厅',
+					price: 1,
+					original: 60
+				},
+				{
+					start: '14:50',
+					end: '17:10散场',
+					type: '日语/2D',
+					place: '2号厅',
+					price: 1,
+					original: 60
+				}
+			]
+		}, {}, {}],
+		index: 0
 	},
-	methods: {
-
-	}
 })
