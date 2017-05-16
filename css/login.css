@@ -1,16 +1,3 @@
-@media screen and (max-width: 420px) {
-  html {
-    font-size: 5px;
-  }
-}
-@media screen and (max-width: 640px) and (min-width: 430px) {
-  html {
-    font-size: 10px;
-  }
-}
-.glyphicon {
-  font-size: 1.8rem;
-}
 body {
   max-width: 640px;
   margin: 0 auto;
@@ -27,6 +14,7 @@ body {
 }
 #top-bar h1 span {
   font-size: 2rem;
+  float: left;
 }
 #main-body nav {
   overflow: hidden;
