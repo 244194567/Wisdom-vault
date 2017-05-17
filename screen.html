@@ -25,7 +25,7 @@
 		<section id="cinema">
 			<!--三行下拉菜单-->
 			<div id="dropMenu" style="display: none;">
-				<a onclick="window.location='#'"><span class="glyphicon glyphicon-home"></span>首页</a><br />
+				<a onclick="window.location='movie.html'"><span class="glyphicon glyphicon-home"></span>首页</a><br />
 				<a onclick="window.location='login.html'"><span class="glyphicon glyphicon-user"></span>个人中心</a>
 			</div>
 			<div id="content">
@@ -35,10 +35,12 @@
 			<span class="glyphicon glyphicon-menu-right"></span>
 
 		</section>
+		
 		<!--场次选择-->
 		<section id="screens">
 			<nav>
 				<ul>
+					<!--日期-->
 					<template v-for="date in dates">
 						<li>
 							<a v-bind:class="{'a-active':date.index==index}" @click="change(date.index)">{{date.name}}</a>
@@ -48,35 +50,19 @@
 			</nav>
 			<!--上午-->
 			<div id="mornings">
-				<div class="screen" v-for="morning in screenList[index].mornings">
-					<div><span>{{morning.start}}</span></br><span>{{morning.end}}</span></div>
-					<div><span>{{morning.type}}</span></br><span>{{morning.place}}</span></div>
-					<div><span>￥</span><span>{{morning.price}}</span></br><span>￥{{morning.original}}</span></div>
-				</div>
+				<Myscreen v-for="morning in screenList[index].mornings" v-bind:screen="morning"></Myscreen>
 			</div>
 			<!--下午-->
 			<div id="afternoons">
-				<div class="screen" v-for="afternoon in screenList[index].afternoons">
-					<div><span>{{afternoon.start}}</span></br><span>{{afternoon.end}}</span></div>
-					<div><span>{{afternoon.type}}</span></br><span>{{afternoon.place}}</span></div>
-					<div><span>￥</span><span>{{afternoon.price}}</span></br><span>￥{{afternoon.original}}</span></div>
-				</div>
+				<Myscreen v-for="afternoon in screenList[index].afternoons" v-bind:screen="afternoon"></Myscreen>
 			</div>
 			<!--晚上-->
 			<div id="nights">
-				<div class="screen" v-for="night in screenList[index].nights">
-					<div><span>{{night.start}}</span></br><span>{{night.end}}</span></div>
-					<div><span>{{night.type}}</span></br><span>{{night.place}}</span></div>
-					<div><span>￥</span><span>{{night.price}}</span></br><span>￥{{night.original}}</span></div>
-				</div>
+				<Myscreen v-for="night in screenList[index].nights" v-bind:screen="night"></Myscreen>
 			</div>
 			<!--凌晨-->
 			<div id="lates">
-				<div class="screen" v-for="late in screenList[index].lates">
-					<div><span>{{late.start}}</span></br><span>{{late.end}}</span></div>
-					<div><span>{{late.type}}</span></br><span>{{late.place}}</span></div>
-					<div><span>￥</span><span>{{late.price}}</span></br><span>￥{{late.original}}</span></div>
-				</div>
+				<Myscreen v-for="late in screenList[index].lates" v-bind:screen="late"></Myscreen>
 			</div>
 		</section>
 	</body>
