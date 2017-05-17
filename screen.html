@@ -15,49 +15,52 @@
 		<!--顶部条-->
 		<header id="top-bar">
 			<h1>
-				<span class="glyphicon glyphicon-menu-left"></span>
+				<span class="glyphicon glyphicon-menu-left" onclick="history.go(-1)"></span>
 				妖精的尾巴剧场版：龙泣
-				<span class="glyphicon glyphicon-menu-hamburger"></span>
+				<span class="glyphicon glyphicon-menu-hamburger" onclick="showDropMenu()"></span>
 			</h1>
 		</header>
 		<!--影院信息-->
 		<section id="cinema">
-			<div id="content">
+			<!--三行下拉菜单-->
+			<div id="dropMenu" style="display: none;">
+				<a onclick="window.location='movie.html'"><span class="glyphicon glyphicon-home"></span>首页</a><br />
+				<a onclick="window.location='login.html'"><span class="glyphicon glyphicon-user"></span>个人中心</a>
+			</div>
+			<div id="content" onclick="window.location='cinema.html'">
 				<p><span>大地影院</span><span>10.<sup>0</sup></span></p>
-				<p><address>市桥街繁华路3号三楼</address></p>
+				<p>市桥街繁华路3号三楼</p>
 			</div>
-			<div>
-				<span class="glyphicon glyphicon-menu-right"></span>
-			</div>
+			<span class="glyphicon glyphicon-menu-right"></span>
 		</section>
+		
 		<!--场次选择-->
-		<section id="screen">
-			<template v-for="date in dates">
-				<nav>
-					<ul>
-
+		<section id="screens">
+			<nav>
+				<ul>
+					<!--日期-->
+					<template v-for="date in dates">
 						<li>
-							<a>{{date.name}}</a>
+							<a v-bind:class="{'a-active':date.index==index}" @click="change(date.index)">{{date.name}}</a>
 						</li>
-
-					</ul>
-				</nav>
-			</template>
+					</template>
+				</ul>
+			</nav>
 			<!--上午-->
-			<div id="morning" v-for="">
-				1
+			<div id="mornings">
+				<Myscreen v-for="morning in screenList[index].mornings" v-bind:screen="morning"></Myscreen>
 			</div>
 			<!--下午-->
-			<div id="afternoon">
-				1
+			<div id="afternoons">
+				<Myscreen v-for="afternoon in screenList[index].afternoons" v-bind:screen="afternoon"></Myscreen>
 			</div>
 			<!--晚上-->
-			<div id="night">
-				1
+			<div id="nights">
+				<Myscreen v-for="night in screenList[index].nights" v-bind:screen="night"></Myscreen>
 			</div>
 			<!--凌晨-->
-			<div id="late-at-night">
-				1
+			<div id="lates">
+				<Myscreen v-for="late in screenList[index].lates" v-bind:screen="late"></Myscreen>
 			</div>
 		</section>
 	</body>

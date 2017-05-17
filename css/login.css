@@ -138,3 +138,10 @@ body {
   color: darkgrey;
   background: #F2F2F2;
 }
+#footer a {
+  margin: 1rem;
+}
+#footer a img {
+  width: 4rem;
+  height: 4rem;
+}

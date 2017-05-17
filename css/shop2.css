@@ -42,6 +42,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+<<<<<<< HEAD
 .content li {
   color: #ADADAD;
   display: inline-block;
@@ -134,3 +135,5 @@ body {
 .dropdown:hover .dropdown-content3 {
   display: block;
 }
+=======
+>>>>>>> 9adad1a21c1f8ad1d196b5345f7a510a246146ac

@@ -14,7 +14,7 @@
 	<body>
 		<!--顶部条-->
 		<header id="top-bar">
-			<h1><span class="glyphicon glyphicon-menu-left"></span>登录</h1>
+			<h1><span class="glyphicon glyphicon-menu-left" onclick="history.go(-1)"></span>登录</h1>
 		</header>
 
 		<!--mainbody-->
@@ -67,18 +67,18 @@
 					<!--手机号-->
 					<p class="p2">
 						<span class="glyphicon glyphicon-earphone"></span>
-						<input type="phone" class="" placeholder="11位手机号" />
+						<input type="phone" placeholder="11位手机号" />
 					</p>
 					<!--验证码-->
 					<p class="p3">
 						<span class="glyphicon glyphicon-lock"></span>
 						<input type="text" placeholder="验证码" />
-						<span class="label label-default">{{random}}</span>
+						<span class="label label-default" @click="verification">{{random}}</span>
 					</p>
 					<!--密码-->
 					<p class="p3">
 						<span class="glyphicon glyphicon-lock"></span>
-						<input type="text" class="" placeholder="6位短信动态码" />
+						<input type="text" placeholder="6位短信动态码" />
 						<a class="btn">发送验证码</a>
 					</p>
 					<p class="pa">
@@ -86,17 +86,18 @@
 					</p>
 				</form>
 			</div>
-		</div>
+		</section>
 
 		<!--底部功能键-->
 		<footer id="footer">
 			<hr/>
 			<span>第三方登录</span>
 			<p>
-				<a>QQ</a>
-				<a>微博</a>
+				<a><img src="img/qq.png" /></a>
+				<a><img src="img/weixin.png" /></a>
 			</p>
 		</footer>
 		</div>
 		<script type="text/javascript" src="js/login.js"></script>
+
 </html>
