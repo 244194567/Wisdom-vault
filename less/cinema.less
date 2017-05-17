@@ -1,0 +1,165 @@
+@color: #F36523;
+@bgColor: #F2F2F2;
+@media screen and(max-width:420px) {
+    html {
+        font-size: 5px;
+    }
+}
+
+@media screen and(max-width:640px) and (min-width:430px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+* {
+    font-size: 1.6rem;
+}
+
+.glyphicon {
+    //图标
+    font-size: 1.8rem;
+}
+
+body {
+    max-width: 640px;
+    margin: 0 auto;
+    background: @bgColor;
+}
+
+#top-bar {
+    background: @color;
+    h1 {
+        margin: 0;
+        padding: 1rem;
+        font-size: 2rem;
+        color: white;
+        overflow: auto;
+        span {
+            font-size: 2rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        span:nth-of-type(1) {
+            float: left;
+        }
+        span:nth-of-type(2) {
+            float: right;
+        }
+    }
+}
+
+//下拉菜单
+#dropMenu {
+    padding: 1rem;
+    background: #EB6120;
+    position: absolute;
+    top: -0.1rem;
+    right: 0;
+    z-index: 1;
+    text-align: left;
+    a {
+        display: inline-block;
+        color: white;
+        span {
+            font-size: 1.35rem;
+            margin-right: 1rem;
+        }
+    }
+    a:nth-of-type(1) {
+        margin-bottom: 1rem;
+    }
+}
+
+#cinema {
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    background: @bgColor;
+    border-bottom: 1px #d7d7d7 solid;
+    * {
+        text-align: left;
+    }
+    #content {
+        h2 {
+            font-size: 2.4rem;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 0.5rem;
+            span {
+                color: @color;
+            }
+        }
+        p:nth-of-type(1) {
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin: 0;
+            span {
+                color: #269ABC;
+            }
+        }
+    }
+}
+
+#characteristic,
+#service,
+#wala {
+    padding: 1rem;
+    h3 {
+        margin: 0;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 600;
+        border-left: 5px solid @color;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+#service {
+    &>div {
+        display: flex;
+        overflow: auto;
+        &>div {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            padding: 0.2rem 0;
+            background: white;
+            float: left;
+            color: @color;
+        }
+        .tag {
+            width: 16%;
+            border-left: 5px solid green;
+            padding: 1rem 0 0 0;
+            span:nth-of-type(1) {
+                font-size: 2rem;
+            }
+            span:nth-of-type(2) {
+                font-size: 1rem;
+            }
+        }
+        .describe {
+            margin: 0 1rem;
+            margin-bottom: 0.5rem;
+            padding: 0 1rem;
+            text-align: left;
+            width: 60%;
+            line-height: 400%;
+            color: black;
+        }
+    }
+}
+
+#wala {
+    a {
+        background: white;
+        border: 1px #D5D5D5 solid;
+        border-radius: 3px!important;
+    }
+}

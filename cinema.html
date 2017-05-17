@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -9,6 +10,68 @@
 		<link href="css/cinema.css" rel="stylesheet" />
 		<script src="js/vue.js"></script>
 	</head>
+
 	<body>
+		<!--顶部条-->
+		<header id="top-bar">
+			<h1>
+				<span class="glyphicon glyphicon-menu-left" onclick="window.location='#'"></span>
+				大地影院
+				<span class="glyphicon glyphicon-menu-hamburger" onclick="showDropMenu()"></span>
+			</h1>
+		</header>
+
+		<!--影院信息-->
+		<section id="cinema">
+			<!--三行下拉菜单-->
+			<div id="dropMenu" style="display: none;">
+				<a onclick="window.location='movie.html'"><span class="glyphicon glyphicon-home"></span>首页</a><br />
+				<a onclick="window.location='login.html'"><span class="glyphicon glyphicon-user"></span>个人中心</a>
+			</div>
+
+			<div id="content">
+				<h2>大地影院<span class="glyphicon glyphicon-map-marker"></span></h2>
+				<p>地址：天河尝下5874号发达广场8楼</p>
+				<p>电话：<span>020-12457899</span></p>
+			</div>
+		</section>
+
+		<!--特色-->
+		<section id="characteristic">
+			<header>
+				<h3>特色</h3>
+				<p>广州首家全部采用NEC激光放映设备的外星影院</p>
+			</header>
+		</section>
+
+		<!--服务-->
+		<section id="service">
+			<header>
+				<h3>服务</h3>
+			</header>
+			<div>
+				<div class="tag"><span class="glyphicon glyphicon-asterisk"></span><br /><span>卖品</span></div>
+				<div class="describe">爆米花、可乐等</div>
+				<div class="tag"><span class="glyphicon glyphicon-plane"></span><br /><span>飞机</span></div>
+			</div>
+			<div>
+				<div class="tag"><span class="glyphicon glyphicon-sunglasses"></span><br /><span>3D眼镜</span></div>
+				<div class="describe">免押金</div>
+			</div>
+			<div>
+				<div class="tag"><span class="glyphicon glyphicon-shopping-cart"></span><br /><span>购物</span></div>
+				<div class="describe">ktv、购物广场等多处休闲</div>
+			</div>
+		</section>
+
+		<!--哇啦-->
+		<section id="wala">
+			<header>
+				<h3>哇啦</h3>
+			</header>
+			<a class="btn btn-block">点击加载更多</a>
+		</section>
 	</body>
+	<script src="js/cinema.js"></script>
+
 </html>
