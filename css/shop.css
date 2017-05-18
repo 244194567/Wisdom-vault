@@ -1,48 +1,124 @@
-body {
-  max-width: 640px;
-  margin: 0 auto;
+body{
+    max-width: 700px;
+    margin: 0 auto;
 }
-.navbar-header {
-  background-color: #F36621;
+#header {
+    background-color: #F26422;
+    height: 50px;
+    width: 100%;
 }
-.navbar-header span {
-  color: white;
-  font-size: 18px;
-  position: relative;
-  left: 50px;
-  top: -15px;
+#myspan{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 25%;
+
+}
+
+
+#myspan1{
+    color: white;
+    font-size: 20px;
+    margin: 10px ;
+    position: relative;
+
+
+}
+
+#myspan2{
+    color: white;
+    font-size: 20px;
+    float: right;
+    margin: 15px;
+}
+#myspan3{
+    color: white;
+    font-size: 15px;
+    margin: 10px ;
+    position: relative;
+    left: 38%;
+}
+#time{
+    height: 40px;
+    border: transparent;
+    text-decoration: none;
 }
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
+    left: -5%;
+    list-style:none;
 }
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #F36621;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  left: 213px;
-  top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 390px;
+    left: -50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    top: 40px;
 }
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {
-  background-color: #F36621;
+
+
+.dropdown-content p{
+    padding-left: 50px;
 }
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
-.dropdown:hover .dropbtn {
-  background-color: #F36621;
+
+
+/*第二个区域*/
+.div02{
+    position: relative;
+    left: 40%;
+    top: -20px;
 }
-#btn {
-  position: relative;
-  left: 300px;
-  border: transparent;
-  background-color: #F36621;
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 390px;
+    left: -170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    top: 40px;
+}
+
+
+.dropdown-content1 p{
+    padding-left: 50px;
+}
+.dropdown:hover .dropdown-content1 {
+    display: block;
+}
+
+/*第三个区域*/
+
+.div03{
+    position: relative;
+    left: 65%;
+    top: -40px;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 390px;
+    left: -240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    top: 40px;
+}
+
+
+.dropdown-content2 p{
+    padding-left: 50px;
+}
+.dropdown:hover .dropdown-content2 {
+    display: block;
 }

@@ -5,11 +5,233 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <title>科韵路店</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/shop.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
     </head>
+<style>
+    body{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    #header {
+        background-color: #F26422;
+        height: 50px;
+        width: 100%;
+    }
+    #myspan{
+        margin-top: 10px;
+        color: white;
+        font-size: 20px;
+        position: relative;
+        left: 25%;
+
+    }
+
+
+    #myspan1{
+        color: white;
+        font-size: 20px;
+        margin: 10px ;
+        position: relative;
+
+
+    }
+
+    #myspan2{
+        color: white;
+        font-size: 20px;
+        float: right;
+        margin: 15px;
+    }
+    #myspan3{
+        color: white;
+        font-size: 15px;
+        margin: 10px ;
+        position: relative;
+        left: 38%;
+    }
+    #time{
+        height: 40px;
+        border: transparent;
+        text-decoration: none;
+        background-color: #F0EFED;
+        position: relative;
+        top: -12px;
+
+    }
+    #time span{
+        position: relative;
+        padding-top: 10px;
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        left: -5%;
+        list-style:none;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 390px;
+        left: -40px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        top: 40px;
+        height: 250px;
+    }
+
+    .dropdown-content>p{
+    padding-top: 20px;
+    }
+
+
+    .dropdown-content p{
+        padding-left: 50px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    /*第二个区域*/
+    .div02{
+        position: relative;
+        left: 40%;
+        top: -27px;
+    }
+
+    .dropdown-content1 {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 390px;
+        left: -170px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        top: 40px;
+        height: 250px;
+
+    }
+
+
+    .dropdown-content1 p{
+        padding-left: 50px;
+    }
+    .dropdown:hover .dropdown-content1 {
+        display: block;
+    }
+
+    /*第三个区域*/
+
+    .div03{
+        position: relative;
+        left: 70%;
+        top: -55px;
+
+    }
+
+    .dropdown-content2 {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 390px;
+        left: -270px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        top: 30px;
+        height: 250px;
+    }
+
+
+    .dropdown-content2 p{
+        padding-left: 50px;
+    }
+    .dropdown:hover .dropdown-content2 {
+        display: block;
+    }
+
+
+
+
+    .class3 {
+
+        display: inline;
+        height: 600px;
+
+
+    }
+    .class3 .class5 {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s;
+
+    }
+
+
+
+    .class5{
+        position: absolute;
+        background-color:white;
+        color: black;
+        top: 5px;
+        left: 31%;
+        width: 100%;
+        height: 245px;
+        font-size: 10px;
+        padding-top: 0px;
+
+
+
+    }
+
+    .class3:hover .class5{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .class3 p:hover{
+        background-color: white;
+    }
+
+    .class3>p {
+        padding-top: 15px;
+    }
+
+    .class5 p{
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+
+    .myright{
+      color: orange;
+        float: right;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .mytitle{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .myp{
+        padding-left: 20px;
+        padding-top: 10px;
+
+    }
+
+    .myp1{
+        color: #A5A5A5;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #EBEBEB;
+    }
+</style>
 
 
 
@@ -17,22 +239,158 @@
 <body>
 <!--头部-->
 <div id="header">
-<nav class="navbar navbar-default" role="navigation" id="head" >
-    <div class="navbar-header" >
-        <span>哈艺时尚影城-天河科韵路店</span>
-        <div class="dropdown">
-            <button id="btn" class="navbar-toggle" data-toggle="collapse" data-target="#show">
-                <span class="icon-bar" ></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="dropdown-content">
-                <a>首页</a>
-                <a>个人中心</a>
+<span class="glyphicon glyphicon-menu-left" id="myspan1" onclick="location.href='Fairy Tail.html'" ></span>
+    <span id="myspan">进击的巨人</span>
+    <span id="myspan3" onclick="location.href='city.html'">深圳</span>
+<span class="glyphicon glyphicon-menu-down" id="myspan2" onclick="location.href='city.html'"></span>
+</div>
+
+<div id="time">
+    <ul>
+        <li>
+            <div class="dropdown">
+                <span><span class="glyphicon glyphicon-time"></span> 今天05.18</span>
+                <span class="glyphicon glyphicon-menu-down"></span>
+                <div class="dropdown-content">
+                    <p>今天05.18</p>
+                    <p>明天05.19</p>
+                    <p>后天05.20</p>
+                    <p>周日05.21</p>
+                </div>
             </div>
-        </div>
-    </div>
-</nav>
+
+
+<div class="div02">
+            <div class="dropdown">
+                <span class="glyphicon glyphicon-map-marker"></span> 区域</span>
+                <span class="glyphicon glyphicon-menu-down"></span>
+                <div class="dropdown-content1">
+                    <div class="class3">
+                    <p>区域</p>
+                        <div class="class5">
+                            <p>全部</p>
+                            <p>荔湾区</p>
+                            <p>越秀区</p>
+                            <p>海珠区</p>
+                        </div>
+                    </div>
+
+                    <div class="class3">
+                    <p>地图</p>
+                        <div class="class5">
+                            <p>全部</p>
+                            <p>1号线</p>
+                            <p>2号线</p>
+                            <p>3号线</p>
+                            <p>4号线</p>
+                            <p>广佛线</p>
+                            <p>APM线</p>
+                        </div>
+                    </div>
+
+                    <div class="class3">
+                    <p>商圈</p>
+                        <div class="class5">
+                            <p>全部</p>
+                            <p>西关</p>
+                            <p>东山</p>
+                            <p>北京路</p>
+                            <p>小北</p>
+                            <p>江南西</p>
+                            <p>天河</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+
+            <div class="div03">
+                <div class="dropdown">
+                    <span id="myspan5"><span class="glyphicon glyphicon-heart"></span>特色</span>
+                    <span class="glyphicon glyphicon-menu-down"></span>
+                    <div class="dropdown-content2">
+                        <div class="class3">
+                        <p>特效厅</p>
+                            <div class="class5">
+                                <p>全部</p>
+                                <p>杜比全景声厅</p>
+                                <p>4K厅</p>
+                                <p>VIP厅</p>
+                                <p>巨幕厅</p>
+                                <p>4D厅</p>
+                            </div>
+                        </div>
+
+                        <div class="class3">
+                        <p>服务</p>
+                            <div class="class5">
+                                <p>全部</p>
+                                <p>免费停车</p>
+                                <p>情侣座</p>
+                                <p>退票</p>
+                                <p>自订票</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--<div class="dropdown">
+                <span>
+                <span id="myspan4">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                 区域
+                </span>
+                 <span class="glyphicon glyphicon-menu-down"></span></span>
+                <div class="dropdown-content">
+                    <p>菜鸟教程</p>
+                    <p>www.runoob.com</p>
+                </div>
+            </div>
+
+
+
+            <span id="myspan5"><span class="glyphicon glyphicon-heart"></span>特色</span>
+            <span class="glyphicon glyphicon-menu-down"></span>
+            -->
+        </li>
+    </ul>
+</div>
+<div>
+    <span class="mytitle"><strong>广州南沙万达电影城</strong></span>
+    <span class="myright">10</span>
+    <p class="myp">双山大道三号娱乐楼4楼</p>
+    <p class="myp1">近期场次&nbsp;&nbsp;1:35&nbsp;|&nbsp;13:15&nbsp;|&nbsp;14:30...</p>
+</div>
+
+<div>
+    <span class="mytitle"><strong>广州南沙万达电影城</strong></span>
+    <span class="myright">10</span>
+    <p class="myp">双山大道三号娱乐楼4楼</p>
+    <p class="myp1">近期场次&nbsp;&nbsp;1:35&nbsp;|&nbsp;13:15&nbsp;|&nbsp;14:30...</p>
+</div>
+
+<div>
+    <span class="mytitle"><strong>广州南沙万达电影城</strong></span>
+    <span class="myright">10</span>
+    <p class="myp">双山大道三号娱乐楼4楼</p>
+    <p class="myp1">近期场次&nbsp;&nbsp;1:35&nbsp;|&nbsp;13:15&nbsp;|&nbsp;14:30...</p>
+</div>
+
+<div>
+    <span class="mytitle"><strong>广州南沙万达电影城</strong></span>
+    <span class="myright">10</span>
+    <p class="myp">双山大道三号娱乐楼4楼</p>
+    <p class="myp1">近期场次&nbsp;&nbsp;1:35&nbsp;|&nbsp;13:15&nbsp;|&nbsp;14:30...</p>
+</div>
+
+<div style="position: relative;left: 10%">
+<div style="border: 1px solid #EBEBEB;height: 30px;width: 70%;text-align: center;padding-top: 4px">
+加载中
+</div>
 </div>
 </body>
 </html>

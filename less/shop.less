@@ -1,58 +1,81 @@
 body{
-  max-width: 640px;
+  max-width: 700px;
   margin: 0 auto;
+
 }
-.navbar-header{
-  background-color: #F36621;
-  span{
+#header{
+  background-color: #F26422;
+  height: 50px;
+  width: 100%;
+  #myspan{
+    margin-top: 10px;
     color: white;
-    font-size: 18px;
-position: relative;
-    left: 50px;
-    top: -15px
+    font-size: 20px;
+    position: relative;
+    left: 25%;
+
   }
 }
 
-.dropdown {
+#myspan1{
+  color: white;
+  font-size: 20px;
+  margin: 10px ;
   position: relative;
-  display: inline-block;
+
 
 }
 
+#myspan2{
+  color: white;
+  font-size: 20px;
+  float: right;
+  margin: 15px;
+}
+#myspan3{
+  color: white;
+  font-size: 15px;
+  margin: 10px ;
+  position: relative;
+  left: 38%;
+}
+
+#time{
+  background-color: #f3425e;
+  margin: 0;
+  padding: 0;
+ ul{
+   list-style: none;
+   border-bottom: 1px solid #DFDFDF;
+   li{
+    position: relative;
+     left: -20px;
+     margin-left: 20px;
+    padding: 10px;
+     #myspan4, #myspan5{
+       padding-left:20px;
+
+     }
+
+   }
+ }
+}
+
+/下拉菜单/
+
+.dropdown {
+  position: relative;
+
+}
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #F36621;
+  background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  left: 213px;
-  top: 50px;
-}
-
-.dropdown-content a {
-  color:white;
   padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
 
-.dropdown-content a:hover {
-  background-color: #F36621;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
-
 }
 
-.dropdown:hover .dropbtn {
-  background-color: #F36621;
-}
-
-
-#btn{
-  position: relative;
-  left: 300px;
-  border: transparent;
-  background-color: #F36621;
-}
